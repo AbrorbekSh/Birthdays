@@ -64,8 +64,7 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-//            List {
-            VStack {
+            List {
                 VStack {
                     Text("Generate wish using AI")
                         .font(.system(size: 20, weight: .bold))
@@ -104,45 +103,43 @@ struct HomeView: View {
                 .onTapGesture {
                     shine.toggle()
                 }
-                List {
-                    ForEach(monthDict.sorted(by: { $0.key < $1.key }), id: \.key) { month, monthName in
-                        if let upcomingBirthdaysByMonth = upcomingBirthdaysByMonth[month] {
-                            Section(header: Text(monthName)) {
-                                ForEach(upcomingBirthdaysByMonth.sorted(by: { $0.date! < $1.date! })) { birthday in
-                                    let daysLeftMessage = daysLeft(date: birthday.date)
-                                    BirthdayCell(
-                                        nameLabelText: birthday.name ?? "",
-                                        dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year)",
-                                        daysCounterLabelText: daysLeftMessage
-                                    )
-                                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                                        Button(role: .destructive) {
-                                            modelContext.delete(birthday)
-                                        } label: {
-                                            Label("Delete", systemImage: "trash")
-                                        }
+                ForEach(monthDict.sorted(by: { $0.key < $1.key }), id: \.key) { month, monthName in
+                    if let upcomingBirthdaysByMonth = upcomingBirthdaysByMonth[month] {
+                        Section(header: Text(monthName)) {
+                            ForEach(upcomingBirthdaysByMonth.sorted(by: { $0.date! < $1.date! })) { birthday in
+                                let daysLeftMessage = daysLeft(date: birthday.date)
+                                BirthdayCell(
+                                    nameLabelText: birthday.name ?? "",
+                                    dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year)",
+                                    daysCounterLabelText: daysLeftMessage
+                                )
+                                .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                                    Button(role: .destructive) {
+                                        modelContext.delete(birthday)
+                                    } label: {
+                                        Label("Delete", systemImage: "trash")
                                     }
                                 }
                             }
                         }
                     }
-                    
-                    ForEach(monthDict.sorted(by: { $0.key < $1.key }), id: \.key) { month, monthName in
-                        if let pastBirthdaysByMonth = pastBirthdaysByMonth[month] {
-                            Section(header: Text(monthName  + " \(year + 1)")) {
-                                ForEach(pastBirthdaysByMonth.sorted(by: { $0.date! < $1.date! })) { birthday in
-                                    let daysLeftMessage = daysLeft(date: birthday.date)
-                                    BirthdayCell(
-                                        nameLabelText: birthday.name ?? "",
-                                        dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year + 1)",
-                                        daysCounterLabelText: daysLeftMessage
-                                    )
-                                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                                        Button(role: .destructive) {
-                                            modelContext.delete(birthday)
-                                        } label: {
-                                            Label("Delete", systemImage: "trash")
-                                        }
+                }
+                
+                ForEach(monthDict.sorted(by: { $0.key < $1.key }), id: \.key) { month, monthName in
+                    if let pastBirthdaysByMonth = pastBirthdaysByMonth[month] {
+                        Section(header: Text(monthName  + " \(year + 1)")) {
+                            ForEach(pastBirthdaysByMonth.sorted(by: { $0.date! < $1.date! })) { birthday in
+                                let daysLeftMessage = daysLeft(date: birthday.date)
+                                BirthdayCell(
+                                    nameLabelText: birthday.name ?? "",
+                                    dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year + 1)",
+                                    daysCounterLabelText: daysLeftMessage
+                                )
+                                .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                                    Button(role: .destructive) {
+                                        modelContext.delete(birthday)
+                                    } label: {
+                                        Label("Delete", systemImage: "trash")
                                     }
                                 }
                             }
@@ -150,7 +147,7 @@ struct HomeView: View {
                     }
                 }
             }
-//            .scrollIndicators(ScrollIndicatorVisibility.hidden)
+            .scrollIndicators(ScrollIndicatorVisibility.hidden)
             .navigationBarTitle("Birthdays", displayMode: .large)
             .navigationBarItems(
                     leading:
