@@ -7,7 +7,7 @@ struct BirthdayDetailsView: View {
     @State private var notificationEnabled: Bool = true
     @State private var selectedMonth = 6
     @State private var selectedDay = 27
-    @State private var selectedYear: Int? = nil
+    @State private var selectedYear: String = "---"
     
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.modelContext) var modelContext
@@ -18,7 +18,7 @@ struct BirthdayDetailsView: View {
         "September", "October", "November", "December"
     ]
     let days = Array(1...31)
-    let years = Array(1950...2023)
+    let years: [String] = (1940...2023).map { String($0) } + ["---"]
     
     var body: some View {
         NavigationView {
@@ -29,7 +29,7 @@ struct BirthdayDetailsView: View {
                         .frame(height: 40)
                         .font(Font.system(size: 20))
                 }
-                
+
                 Section(header: Text("Choose the date")) {
                     HStack {
                         Picker("Month", selection: $selectedMonth) {
@@ -48,13 +48,14 @@ struct BirthdayDetailsView: View {
                         .pickerStyle(WheelPickerStyle())
                         .frame(width: 60)
                         
-                        Picker("Year", selection: $selectedYear) {
+                        Picker("Select a Year", selection: $selectedYear) {
                             ForEach(years, id: \.self) { year in
-                                Text("\(year)").tag(year)
+                                Text(year).tag(year)
                             }
                         }
                         .pickerStyle(WheelPickerStyle())
-                        .frame(width: 120)
+                        .labelsHidden()
+                        .frame(height: 120)
                     }
                 }
               
@@ -79,7 +80,7 @@ struct BirthdayDetailsView: View {
                     Button("Save") {
                         let birthday = Birthday(
                             name: name,
-                            year: selectedYear,
+                            year: 2023,
                             note: note,
                             notificationEnabled: notificationEnabled,
                             date: BirthdayDate(

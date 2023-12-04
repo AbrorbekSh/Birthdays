@@ -24,11 +24,12 @@ struct SearchView: View {
     //MARK: - SwiftData
     
     @Environment(\.modelContext) var modelContext
-    
-    @State private var searchText = ""
     @Query var birthdays: [Birthday]
     
     @Environment(\.presentationMode) var presentationMode
+    
+    @State private var searchText = ""
+    
     
     var filteredBirthdays: [Birthday] {
         if searchText.isEmpty {
@@ -45,8 +46,8 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(text: $searchText)
-                    .padding()
+//                SearchBar(text: $searchText)
+//                    .padding()
                 
                 List(filteredBirthdays.sorted(by: { $0.name! < $1.name! })) { birthday in
                     let daysLeftMessage = daysLeft(date: birthday.date)
@@ -72,8 +73,9 @@ struct SearchView: View {
                         .foregroundColor(.orange)
                 }
             )
-            .navigationBarTitle("Search")
+            .navigationBarTitle("Search", displayMode: .inline)
         }
+        .searchable(text: $searchText)
     }
     
     func daysLeft(date: BirthdayDate?) -> String {
