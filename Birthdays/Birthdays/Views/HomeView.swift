@@ -81,23 +81,23 @@ struct HomeView: View {
                 }
                 .shine(shine, duration: 0.8)
                 .listRowBackground(Color.clear)
-                //                .rotation3DEffect(
-                //                    .degrees(rotateIn3D ? 6 : -6),
-                //                    axis: (
-                //                        x: rotateIn3D ? 90 : -45,
-                //                        y: rotateIn3D ? -45 : -90,
-                //                        z: 0
-                //                    )
-                //                )
-                //                .animation(
-                //                    Animation.easeInOut(
-                //                        duration: 2
-                //                    )
-                //                    .repeatForever(autoreverses: true),
-                //                    value: UUID()
-                //                )
+//                                .rotation3DEffect(
+//                                    .degrees(rotateIn3D ? 6 : -6),
+//                                    axis: (
+//                                        x: rotateIn3D ? 90 : -45,
+//                                        y: rotateIn3D ? -45 : -90,
+//                                        z: 0
+//                                    )
+//                                )
+//                                .animation(
+//                                    Animation.easeInOut(
+//                                        duration: 2
+//                                    )
+//                                    .repeatForever(autoreverses: true),
+//                                    value: UUID()
+//                                )
                 .onAppear() {
-                    //                    rotateIn3D.toggle()
+//                                        rotateIn3D.toggle()
                     shine.toggle()
                 }
                 .onTapGesture {
