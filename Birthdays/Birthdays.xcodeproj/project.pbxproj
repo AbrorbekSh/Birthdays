@@ -24,6 +24,7 @@
 		2193A8692B0DFCB9009E677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2193A8682B0DFCB9009E677D /* Assets.xcassets */; };
 		2193A86C2B0DFCB9009E677D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2193A86B2B0DFCB9009E677D /* Preview Assets.xcassets */; };
 		2193A8752B0E0248009E677D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2193A8742B0E0248009E677D /* HomeView.swift */; };
+		43223BCB2B1E4C0B008BF24A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43223BCA2B1E4C0B008BF24A /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		2193A86D2B0DFCB9009E677D /* Birthdays.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Birthdays.entitlements; sourceTree = "<group>"; };
 		2193A86E2B0DFCB9009E677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2193A8742B0E0248009E677D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		43223BCA2B1E4C0B008BF24A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				2187F3EA2B191EDB001649BC /* CardView.swift */,
 				2187F3EC2B1A0E61001649BC /* SearchView.swift */,
 				2187F3F22B1BB442001649BC /* CustomDatePicker.swift */,
+				43223BCA2B1E4C0B008BF24A /* NotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				2187F3EB2B191EDB001649BC /* CardView.swift in Sources */,
 				2193A8672B0DFCB8009E677D /* Birthday.swift in Sources */,
 				214855C52B15A67D00D9558E /* Color + Extension.swift in Sources */,
+				43223BCB2B1E4C0B008BF24A /* NotificationView.swift in Sources */,
 				2193A47F2B0E7D560095BAFB /* CalendarView.swift in Sources */,
 				214855C72B15A8BD00D9558E /* View + Extensions.swift in Sources */,
 				2187F3F32B1BB442001649BC /* CustomDatePicker.swift in Sources */,
