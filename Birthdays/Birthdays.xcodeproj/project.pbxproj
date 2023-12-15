@@ -24,6 +24,7 @@
 		2193A8692B0DFCB9009E677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2193A8682B0DFCB9009E677D /* Assets.xcassets */; };
 		2193A86C2B0DFCB9009E677D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2193A86B2B0DFCB9009E677D /* Preview Assets.xcassets */; };
 		2193A8752B0E0248009E677D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2193A8742B0E0248009E677D /* HomeView.swift */; };
+		21D48E3B2B236485002A9D95 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D48E3A2B236485002A9D95 /* Date + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		2193A86D2B0DFCB9009E677D /* Birthdays.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Birthdays.entitlements; sourceTree = "<group>"; };
 		2193A86E2B0DFCB9009E677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2193A8742B0E0248009E677D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		21D48E3A2B236485002A9D95 /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				214855C62B15A8BD00D9558E /* View + Extensions.swift */,
 				214855C42B15A67D00D9558E /* Color + Extension.swift */,
+				21D48E3A2B236485002A9D95 /* Date + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				2193A8752B0E0248009E677D /* HomeView.swift in Sources */,
 				2193A8632B0DFCB8009E677D /* BirthdaysApp.swift in Sources */,
 				2187F3F12B1A7CD1001649BC /* NotificationHandler.swift in Sources */,
+				21D48E3B2B236485002A9D95 /* Date + Extensions.swift in Sources */,
 				2187F3ED2B1A0E61001649BC /* SearchView.swift in Sources */,
 				214855CB2B17337B00D9558E /* BirthdayDate.swift in Sources */,
 				214855C32B15942C00D9558E /* Animation.swift in Sources */,

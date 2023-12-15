@@ -51,3 +51,22 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+//                .rotation3DEffect(
+//                    .degrees(rotateIn3D ? 6 : -6),
+//                    axis: (
+//                        x: rotateIn3D ? 90 : -45,
+//                        y: rotateIn3D ? -45 : -90,
+//                        z: 0
+//                    )
+//                )
+//                .animation(
+//                    Animation.easeInOut(
+//                        duration: 2
+//                    )
+//                    .repeatForever(autoreverses: true),
+//                    value: UUID()
+//                )
+//                .onAppear() {
+//                    shine.toggle()
+//                }
+

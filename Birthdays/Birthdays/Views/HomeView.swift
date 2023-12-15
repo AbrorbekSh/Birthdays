@@ -65,44 +65,24 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List {
-                VStack {
-                    Text("Generate wish using AI")
-                        .font(.system(size: 20, weight: .bold))
-                        .frame(
-                            width: 300,
-                            height: 50,
-                            alignment: .leading
-                        )
-                        .padding()
-                        .background(aiBackground)
-                        .cornerRadius(22)
-                        .foregroundColor(.white)
-                    
-                }
-                .shine(shine, duration: 0.8)
-                .listRowBackground(Color.clear)
-//                                .rotation3DEffect(
-//                                    .degrees(rotateIn3D ? 6 : -6),
-//                                    axis: (
-//                                        x: rotateIn3D ? 90 : -45,
-//                                        y: rotateIn3D ? -45 : -90,
-//                                        z: 0
-//                                    )
-//                                )
-//                                .animation(
-//                                    Animation.easeInOut(
-//                                        duration: 2
-//                                    )
-//                                    .repeatForever(autoreverses: true),
-//                                    value: UUID()
-//                                )
-                .onAppear() {
-//                                        rotateIn3D.toggle()
-                    shine.toggle()
-                }
-                .onTapGesture {
-                    shine.toggle()
-                }
+                Text("Generate wish using AI")
+                    .font(.system(size: 20, weight: .bold))
+                    .frame(
+                        width: 310,
+                        height: 50,
+                        alignment: .leading
+                    )
+                    .padding()
+                    .background(aiBackground)
+                    .cornerRadius(22)
+                    .foregroundColor(.white)
+                    .shine(shine, duration: 0.8)
+                    .listRowBackground(Color.clear)
+                    .onTapGesture {
+                        shine.toggle()
+                    }
+
+                
                 ForEach(monthDict.sorted(by: { $0.key < $1.key }), id: \.key) { month, monthName in
                     if let upcomingBirthdaysByMonth = upcomingBirthdaysByMonth[month] {
                         Section(header: Text(monthName)) {
