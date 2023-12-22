@@ -25,6 +25,10 @@
 		2193A86C2B0DFCB9009E677D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2193A86B2B0DFCB9009E677D /* Preview Assets.xcassets */; };
 		2193A8752B0E0248009E677D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2193A8742B0E0248009E677D /* HomeView.swift */; };
 		21D48E3B2B236485002A9D95 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D48E3A2B236485002A9D95 /* Date + Extensions.swift */; };
+		43515E3A2B31DECE00032E61 /* BirthdaysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E392B31DECE00032E61 /* BirthdaysViewModel.swift */; };
+		43515E3E2B322EC200032E61 /* BirthdayCalendarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */; };
+		43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */; };
+		437D94E72B30ECA8003873CA /* BirthdayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		2193A86E2B0DFCB9009E677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2193A8742B0E0248009E677D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		21D48E3A2B236485002A9D95 /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		43515E392B31DECE00032E61 /* BirthdaysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysViewModel.swift; sourceTree = "<group>"; };
+		43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarListView.swift; sourceTree = "<group>"; };
+		43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarCell.swift; sourceTree = "<group>"; };
+		437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 			children = (
 				2193A8662B0DFCB8009E677D /* Birthday.swift */,
 				214855CA2B17337B00D9558E /* BirthdayDate.swift */,
+				43515E392B31DECE00032E61 /* BirthdaysViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 				2187F3EA2B191EDB001649BC /* CardView.swift */,
 				2187F3EC2B1A0E61001649BC /* SearchView.swift */,
 				2187F3F22B1BB442001649BC /* CustomDatePicker.swift */,
+				437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */,
+				43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				2193A47C2B0E77960095BAFB /* BirthdayCell.swift */,
+				43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -250,10 +262,14 @@
 				2193A8752B0E0248009E677D /* HomeView.swift in Sources */,
 				2193A8632B0DFCB8009E677D /* BirthdaysApp.swift in Sources */,
 				2187F3F12B1A7CD1001649BC /* NotificationHandler.swift in Sources */,
+				43515E3A2B31DECE00032E61 /* BirthdaysViewModel.swift in Sources */,
+				437D94E72B30ECA8003873CA /* BirthdayCalendarView.swift in Sources */,
 				21D48E3B2B236485002A9D95 /* Date + Extensions.swift in Sources */,
+				43515E3E2B322EC200032E61 /* BirthdayCalendarListView.swift in Sources */,
 				2187F3ED2B1A0E61001649BC /* SearchView.swift in Sources */,
 				214855CB2B17337B00D9558E /* BirthdayDate.swift in Sources */,
 				214855C32B15942C00D9558E /* Animation.swift in Sources */,
+				43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */,
 				2193A47D2B0E77960095BAFB /* BirthdayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

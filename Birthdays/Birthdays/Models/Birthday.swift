@@ -10,7 +10,7 @@ import SwiftData
 import SwiftUI
 
 @Model
-final class Birthday {
+final class Birthday: ObservableObject {
     var photo: String?
     var name: String?
     var year: Int?

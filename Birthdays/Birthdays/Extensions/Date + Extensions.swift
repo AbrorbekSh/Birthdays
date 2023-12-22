@@ -15,4 +15,8 @@ extension Date {
     var dayBefore: Date {
         return Calendar.current.date(byAdding: .day, value: -1, to: self)!
     }
+    
+    var startOfDay: Date {
+        Calendar.current.startOfDay(for: self)
+    }
 }
