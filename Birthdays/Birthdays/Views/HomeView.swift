@@ -46,6 +46,7 @@ struct HomeView: View {
     
     @State private var showingPopover = false
     @State private var showingSearchView = false
+    @State private var showingCalendarView = false
     
     private var monthDict: [Int: String] = [
         1: "January",
@@ -142,10 +143,13 @@ struct HomeView: View {
                                 SearchView()
                             }
                             Button(action: {
-                                
+                                showingCalendarView = true
                             }) {
                                 Image(systemName: "calendar")
                                     .foregroundColor(.orange)
+                            }
+                            .popover(isPresented: $showingCalendarView) {
+                                BirthdayCalendarView()
                             }
                         },
                     trailing: Button(action: {
