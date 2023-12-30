@@ -1,0 +1,68 @@
+{
+  "source": "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "New birthday"
+      },
+      {
+        "comment": "",
+        "key": "Enter the name"
+      },
+      {
+        "comment": "",
+        "key": "Choose the date"
+      },
+      {
+        "comment": "",
+        "key": "Note"
+      },
+      {
+        "comment": "",
+        "key": "Enable birthday notifications"
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Month"
+      },
+      {
+        "comment": "",
+        "key": "Day"
+      },
+      {
+        "comment": "",
+        "key": "Select a Year"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "Any additional information"
+      },
+      {
+        "comment": "",
+        "key": "Notifications"
+      }
+    ]
+  },
+  "version": 1
+}
