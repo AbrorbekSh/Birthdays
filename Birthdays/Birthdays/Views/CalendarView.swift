@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CalendarView: UIViewRepresentable {
-    
     let interval: DateInterval
     @ObservedObject var viewModel: BirthdaysViewModel
     @Binding var dateSelected: DateComponents?
@@ -24,19 +23,16 @@ struct CalendarView: UIViewRepresentable {
         view.selectionBehavior = dateSelection
         return view
     }
-    
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(parent: self, viewModel: _viewModel)
     }
-    
-    
+
     func updateUIView(_ uiView: UICalendarView, context: Context) {
         
     }
     
     class Coordinator: NSObject, UICalendarViewDelegate, UICalendarSelectionSingleDateDelegate {
-        
         var parent: CalendarView
         @ObservedObject var viewModel: BirthdaysViewModel
         
@@ -90,5 +86,4 @@ struct CalendarView: UIViewRepresentable {
             return true
         }
     }
-    
 }

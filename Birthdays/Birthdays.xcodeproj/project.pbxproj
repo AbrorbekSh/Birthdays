@@ -29,6 +29,8 @@
 		43515E3E2B322EC200032E61 /* BirthdayCalendarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */; };
 		43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */; };
 		437D94E72B30ECA8003873CA /* BirthdayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */; };
+		6287B3952B4434FC00B6BF31 /* DatePickerDateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3942B4434FC00B6BF31 /* DatePickerDateProvider.swift */; };
+		6287B3972B446C9700B6BF31 /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarListView.swift; sourceTree = "<group>"; };
 		43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarCell.swift; sourceTree = "<group>"; };
 		437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarView.swift; sourceTree = "<group>"; };
+		6287B3942B4434FC00B6BF31 /* DatePickerDateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDateProvider.swift; sourceTree = "<group>"; };
+		6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 				2193A4822B0F10CC0095BAFB /* Application */,
 				2193A86A2B0DFCB9009E677D /* Preview Content */,
 				2187F3F02B1A7CD1001649BC /* NotificationHandler.swift */,
+				6287B3942B4434FC00B6BF31 /* DatePickerDateProvider.swift */,
+				6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */,
 			);
 			path = Birthdays;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				2193A47F2B0E7D560095BAFB /* CalendarView.swift in Sources */,
 				214855C72B15A8BD00D9558E /* View + Extensions.swift in Sources */,
 				2187F3F32B1BB442001649BC /* CustomDatePicker.swift in Sources */,
+				6287B3972B446C9700B6BF31 /* DismissingKeyboard.swift in Sources */,
 				2148D1912B12330200EB2715 /* CustomButtonStyle.swift in Sources */,
 				2193A4972B0F94C70095BAFB /* BirthdayDetailsView.swift in Sources */,
 				2193A8752B0E0248009E677D /* HomeView.swift in Sources */,
@@ -269,6 +276,7 @@
 				2187F3ED2B1A0E61001649BC /* SearchView.swift in Sources */,
 				214855CB2B17337B00D9558E /* BirthdayDate.swift in Sources */,
 				214855C32B15942C00D9558E /* Animation.swift in Sources */,
+				6287B3952B4434FC00B6BF31 /* DatePickerDateProvider.swift in Sources */,
 				43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */,
 				2193A47D2B0E77960095BAFB /* BirthdayCell.swift in Sources */,
 			);

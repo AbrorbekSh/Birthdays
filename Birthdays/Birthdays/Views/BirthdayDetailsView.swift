@@ -4,11 +4,21 @@ import SwiftData
 struct BirthdayDetailsView: View {
     @State private var name: String = ""
     @State private var note: String = ""
-    @State private var notificationEnabled: Bool = true
+
+    //MARK: - Date
     @State private var selectedMonth: Int = Calendar.current.component(.month, from: Date())
     @State private var selectedDay: Int = Calendar.current.component(.day, from: Date())
     @State private var selectedYear: String = "----"
-    
+
+    //MARK: - Notifications
+    @State private var thatDayNotificationEnabled: Bool = true
+    @State private var dayBeforeNotificationEnabled: Bool = false
+    @State private var weekBeforeNotificationEnabled: Bool = false
+
+    var buttonDisabled: Bool {
+        return name.isEmpty
+    }
+
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.modelContext) var modelContext
     
@@ -62,110 +72,96 @@ struct BirthdayDetailsView: View {
     
     var body: some View {
         NavigationView {
-
-            Form {
-                Section(header: Text("Enter the name")) {
-                    TextField("Name", text: $name)
-                        .frame(height: 40)
-                        .font(Font.system(size: 20))
-                }
-
-                Section(header: Text("Choose the date")) {
-                    HStack {
-                        Picker("Month", selection: $selectedMonth) {
-                            ForEach(1 ..< months.count + 1, id: \.self) { index in
-                                Text("\(months[index - 1])").tag(index)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(width: 150)
-                        
-                        Picker("Day", selection: $selectedDay) {
-                            ForEach(days, id: \.self) { day in
-                                Text("\(day)").tag(day)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(width: 60)
-                        
-                        Picker("Select a Year", selection: $selectedYear) {
-                            ForEach(years, id: \.self) { year in
-                                Text(year).tag(year)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .labelsHidden()
-                        .frame(height: 120)
+                Form {
+                    Section(header: Text("Enter the name")) {
+                        TextField("Name", text: $name)
+                            .frame(height: 40)
+                            .font(Font.system(size: 20))
                     }
-                }
-              
-                Section(header: Text("Note")) {
-                    TextField("Any additional information", text: $note)
-                        .frame(height: 40)
-                        .font(Font.system(size: 20))
-                }
-                
-                Section(header: Text("Enable birthday notifications")) {
-                    Toggle("Notifications", isOn: $notificationEnabled)
-                }
-                .frame(height: 40)
-            }
-            .navigationBarItems(
-                leading:
-                    Button("Cancel") {
-                        presentationMode.wrappedValue.dismiss()
+
+                    Section(header: Text("Pick the date")) {
+                        HStack {
+                            Picker("Month", selection: $selectedMonth) {
+                                ForEach(1 ..< months.count + 1, id: \.self) { index in
+                                    Text("\(months[index - 1])").tag(index)
+                                }
+                            }
+                            .pickerStyle(WheelPickerStyle())
+                            .frame(width: 150)
+
+                            Picker("Day", selection: $selectedDay) {
+                                ForEach(days, id: \.self) { day in
+                                    Text("\(day)").tag(day)
+                                }
+                            }
+                            .pickerStyle(WheelPickerStyle())
+                            .frame(width: 60)
+
+                            Picker("Select a Year", selection: $selectedYear) {
+                                ForEach(years, id: \.self) { year in
+                                    Text(year).tag(year)
+                                }
+                            }
+                            .pickerStyle(WheelPickerStyle())
+                            .labelsHidden()
+                            .frame(height: 120)
+                        }
                     }
-                    .foregroundStyle(.orange),
-                trailing:
-                    Button("Save") {
-                        let birthday = Birthday(
-                            name: name,
-                            year: 2023,
-                            note: note,
-                            notificationEnabled: notificationEnabled,
-                            date: BirthdayDate(
+
+                    Section(header: Text("Notes")) {
+                        TextField("Any additional information", text: $note)
+                            .frame(height: 40)
+                            .font(Font.system(size: 20))
+                    }
+
+                    Section(header: Text("Remind me:")) {
+                        Toggle("On birthday at 10:00 AM", isOn: $thatDayNotificationEnabled)
+                        Toggle("1 day before", isOn: $dayBeforeNotificationEnabled)
+                        Toggle("1 week before", isOn: $weekBeforeNotificationEnabled)
+                    }
+                    .frame(height: 40)
+                }
+                .modifier(DismissingKeyboard())
+                .navigationBarItems(
+                    leading:
+                        Button("Cancel") {
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                        .foregroundStyle(.orange),
+                    trailing:
+                        Button("Save") {
+                            let birthday = Birthday(
+                                name: name,
+                                year: 2023,
+                                note: note,
+                                notificationEnabled: thatDayNotificationEnabled,
+                                date: BirthdayDate(
+                                    day: selectedDay,
+                                    month: selectedMonth
+                                )
+                            )
+
+                            NotificationManager.shared.scheduleNotificationWithDate(
                                 day: selectedDay,
-                                month: selectedMonth
+                                month: selectedMonth,
+                                thatDayEnabled: thatDayNotificationEnabled,
+                                dayBeforeEnabled: dayBeforeNotificationEnabled,
+                                weekBeforeEnabled: weekBeforeNotificationEnabled,
+                                name: name
+                            )
+                            modelContext.insert(birthday)
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                        .buttonStyle(
+                            CustomButtonStyle(
+                                isEnabled: !buttonDisabled
                             )
                         )
-                        
-                        modelContext.insert(birthday)
-                        presentationMode.wrappedValue.dismiss()
-                        scheduleNotification(name: name)
-                    }
-                    .buttonStyle(
-                        CustomButtonStyle(
-                            isEnabled: !buttonDisabled
-                        )
-                    )
-                    .disabled(buttonDisabled)
-            )
-            .navigationBarTitle("New birthday", displayMode: .large)
+                        .disabled(buttonDisabled)
+                )
+                .navigationBarTitle("New birthday", displayMode: .large)
         }
     }
-    
-    var buttonDisabled: Bool {
-        return name.isEmpty
-    }
-    
-    //MARK: - Helper functions
-    
-    func scheduleNotification(name: String) {
-        let words = name.components(separatedBy: " ")
-        let title = "\(words[0])'s Birthday Tomorrow 🎉"
-        let body = "Don't miss out! A birthday is on its way. Prepare to make it memorable! 🎊🎁"
-        
-        var dateComponents = DateComponents()
-        dateComponents.calendar = Calendar.current
-
-        dateComponents.month = selectedMonth
-        dateComponents.day = selectedDay
-        dateComponents.hour = 10
-        dateComponents.minute = 0
-
-        NotificationManager.shared.scheduleNotification(title: title, body: body, dateComponents: dateComponents)
-    }
-    
 }
 
 #Preview {

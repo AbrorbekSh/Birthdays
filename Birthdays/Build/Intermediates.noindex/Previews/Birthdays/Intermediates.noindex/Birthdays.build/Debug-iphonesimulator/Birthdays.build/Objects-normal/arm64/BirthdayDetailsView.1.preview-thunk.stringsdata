@@ -20,15 +20,15 @@
       },
       {
         "comment": "",
-        "key": "Choose the date"
+        "key": "Pick the date"
       },
       {
         "comment": "",
-        "key": "Note"
+        "key": "Notes"
       },
       {
         "comment": "",
-        "key": "Enable birthday notifications"
+        "key": "Remind me:"
       },
       {
         "comment": "",
@@ -60,7 +60,15 @@
       },
       {
         "comment": "",
-        "key": "Notifications"
+        "key": "On birthday at 10:00 AM"
+      },
+      {
+        "comment": "",
+        "key": "1 day before"
+      },
+      {
+        "comment": "",
+        "key": "1 week before"
       }
     ]
   },

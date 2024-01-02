@@ -25,6 +25,5 @@ struct BirthdayCell: View {
             Text(daysCounterLabelText)
                 .font(.body)
         }
-        .padding(3)
     }
 }

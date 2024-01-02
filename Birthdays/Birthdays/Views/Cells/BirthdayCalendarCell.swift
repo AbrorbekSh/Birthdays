@@ -17,6 +17,5 @@ struct BirthdayCalendarCell: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
         }
-        .background(.white)
     }
 }

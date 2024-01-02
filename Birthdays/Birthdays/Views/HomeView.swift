@@ -10,7 +10,6 @@ import SwiftData
 
 struct HomeView: View {
     //MARK: - Date
-    
     private let currentDate: BirthdayDate = {
         let date = Calendar.current.dateComponents([.day, .month], from: Date())
         return BirthdayDate(day: date.day ?? 0, month: date.month ?? 0)
@@ -22,7 +21,6 @@ struct HomeView: View {
     }()
     
     //MARK: - SwiftData
-    
     @Environment(\.modelContext) var modelContext
     @Query var birthdays: [Birthday]
 

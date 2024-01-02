@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BirthdayCalendarListView: View {
-    
     @Environment(\.modelContext) var context
     @EnvironmentObject var birthdaysViewModel: BirthdaysViewModel
     @Binding var dateSelected: DateComponents?

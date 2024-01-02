@@ -9,7 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct SearchView: View {
-    
     //MARK: - Date
     private let currentDate: BirthdayDate = {
         let date = Calendar.current.dateComponents([.day, .month], from: Date())
@@ -44,38 +43,34 @@ struct SearchView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-//                SearchBar(text: $searchText)
-//                    .padding()
-                
-                List(filteredBirthdays.sorted(by: { $0.name! < $1.name! })) { birthday in
-                    let daysLeftMessage = daysLeft(date: birthday.date)
-                    BirthdayCell(
-                        nameLabelText: birthday.name ?? "",
-                        dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year)",
-                        daysCounterLabelText: daysLeftMessage
-                    )
-                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                        Button(role: .destructive) {
-                            modelContext.delete(birthday)
-                        } label: {
-                            Label("Delete", systemImage: "trash")
+            NavigationView {
+                    List(filteredBirthdays.sorted(by: { $0.name! < $1.name! })) { birthday in
+                        let daysLeftMessage = daysLeft(date: birthday.date)
+                        BirthdayCell(
+                            nameLabelText: birthday.name ?? "",
+                            dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year)",
+                            daysCounterLabelText: daysLeftMessage
+                        )
+                        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                            Button(role: .destructive) {
+                                modelContext.delete(birthday)
+                            } label: {
+                                Label("Delete", systemImage: "trash")
+                            }
                         }
                     }
+                    .modifier(DismissingKeyboard())
+                    .navigationBarItems(trailing:
+                                            Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Done")
+                            .foregroundColor(.orange)
+                    }
+                    )
+                    .navigationBarTitle("Search", displayMode: .inline)
                 }
-            }
-            .navigationBarItems(trailing:
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }) {
-                    Text("Done")
-                        .foregroundColor(.orange)
-                }
-            )
-            .navigationBarTitle("Search", displayMode: .inline)
-        }
-        .searchable(text: $searchText)
+                .searchable(text: $searchText)
     }
     
     func daysLeft(date: BirthdayDate?) -> String {
