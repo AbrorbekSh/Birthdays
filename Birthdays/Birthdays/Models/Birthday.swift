@@ -10,31 +10,39 @@ import SwiftData
 import SwiftUI
 
 @Model
-final class Birthday: ObservableObject {
-    var photo: String?
+final class Birthday: ObservableObject, Identifiable {
+    var id: UUID?
     var name: String?
-    var year: Int?
+    var year: String?
     var note: String?
-    var group: String?
-    var notificationEnabled: Bool?
+    var thatDayNotificationEnabled: Bool?
+    var dayBeforeNotificationEnabled: Bool?
+    var weekBeforeNotificationEnabled: Bool?
     var date: BirthdayDate?
     
     init(
-        photo: String? = nil,
+        id: UUID? = UUID(),
         name: String,
-        year: Int? = nil,
+        year: String? = nil,
         note: String? = nil,
-        group: String? = nil,
-        notificationEnabled: Bool?,
+        thatDayNotificationEnabled: Bool?,
+        dayBeforeNotificationEnabled: Bool?,
+        weekBeforeNotificationEnabled: Bool?,
         date: BirthdayDate?
     ) {
-        self.photo = photo
         self.name = name
         self.year = year
         self.note = note
-        self.group = group
-        self.notificationEnabled = notificationEnabled
+        self.thatDayNotificationEnabled = thatDayNotificationEnabled
+        self.dayBeforeNotificationEnabled = dayBeforeNotificationEnabled
+        self.weekBeforeNotificationEnabled = weekBeforeNotificationEnabled
         self.date = date
+
+        if id == nil {
+            self.id = UUID()
+        } else {
+            self.id = id
+        }
     }
 }
 

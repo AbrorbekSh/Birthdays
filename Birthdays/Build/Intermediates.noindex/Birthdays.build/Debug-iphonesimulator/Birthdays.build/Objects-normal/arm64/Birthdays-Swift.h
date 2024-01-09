@@ -275,6 +275,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 @import UserNotifications;
 #endif
@@ -310,6 +311,11 @@ SWIFT_CLASS("_TtC9Birthdays19NotificationManager")
 
 
 
+
+
+@interface NSUserDefaults (SWIFT_EXTENSION(Birthdays))
+@property (nonatomic) BOOL notificationsEnabled;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)

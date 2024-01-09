@@ -1,0 +1,16 @@
+{
+  "source": "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Notifications"
+      },
+      {
+        "comment": "",
+        "key": "Allow Notifications"
+      }
+    ]
+  },
+  "version": 1
+}
