@@ -5,12 +5,13 @@
 //  Created by Аброрбек on 22.11.2023.
 //
 
+import Combine
 import SwiftUI
 import SwiftData
+import UserNotifications
 
 struct HomeView: View {
     //MARK: - Date
-    
     private let currentDate: BirthdayDate = {
         let date = Calendar.current.dateComponents([.day, .month], from: Date())
         return BirthdayDate(day: date.day ?? 0, month: date.month ?? 0)
@@ -22,12 +23,10 @@ struct HomeView: View {
     }()
     
     //MARK: - SwiftData
-    
     @Environment(\.modelContext) var modelContext
     @Query var birthdays: [Birthday]
 
     //MARK: - Animation
-    @State private var rotateIn3D = false
     @State private var show = true
     @State private var shine = true
     
@@ -41,13 +40,20 @@ struct HomeView: View {
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
-    
+
+    ///When in the system settings no permission for notifications, the toggle should be disabled
+    @State var notificationsAreActive: Bool = UserDefaults.standard.bool(forKey: "NotificationsEnabledInAppSettings")
+    ///Notification permission for in app settings
+    @State var notificationsEnabled: Bool = UserDefaults.standard.bool(forKey: "NotificationsEnabledInAppSettings")
+    @State private var cancellables = Set<AnyCancellable>()
+
     //MARK: - View Present
     
-    @State private var showingPopover = false
+    @State private var showingNewDetailsView = false
     @State private var showingSearchView = false
     @State private var showingCalendarView = false
-    
+    @State private var showingSettingsView = false
+
     private var monthDict: [Int: String] = [
         1: "January",
         2: "February",
@@ -88,19 +94,20 @@ struct HomeView: View {
                     if let upcomingBirthdaysByMonth = upcomingBirthdaysByMonth[month] {
                         Section(header: Text(monthName)) {
                             ForEach(upcomingBirthdaysByMonth.sorted(by: { $0.date! < $1.date! })) { birthday in
-                                let daysLeftMessage = daysLeft(date: birthday.date)
-                                BirthdayCell(
-                                    nameLabelText: birthday.name ?? "",
-                                    dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year)",
-                                    daysCounterLabelText: daysLeftMessage
-                                )
-                                .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                                    Button(role: .destructive) {
-                                        modelContext.delete(birthday)
-                                    } label: {
-                                        Label("Delete", systemImage: "trash")
+                                BirthdayCell(name: birthday.name, date: birthday.date)
+                                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                                        Button(role: .destructive) {
+                                            modelContext.delete(birthday)
+                                            NotificationManager.shared
+                                                .removeNotificationWithBirthday(birthday: birthday)
+                                        } label: {
+                                            Label("Delete", systemImage: "trash")
+                                        }
                                     }
-                                }
+                                    .background {
+                                        NavigationLink("", destination: BirthdayDetailsViewEdit(birthday: birthday))
+                                            .opacity(0)
+                                    }
                             }
                         }
                     }
@@ -110,19 +117,20 @@ struct HomeView: View {
                     if let pastBirthdaysByMonth = pastBirthdaysByMonth[month] {
                         Section(header: Text(monthName  + " \(year + 1)")) {
                             ForEach(pastBirthdaysByMonth.sorted(by: { $0.date! < $1.date! })) { birthday in
-                                let daysLeftMessage = daysLeft(date: birthday.date)
-                                BirthdayCell(
-                                    nameLabelText: birthday.name ?? "",
-                                    dateLabelText: "\(birthday.date!.day).\(birthday.date!.month).\(year + 1)",
-                                    daysCounterLabelText: daysLeftMessage
-                                )
-                                .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                                    Button(role: .destructive) {
-                                        modelContext.delete(birthday)
-                                    } label: {
-                                        Label("Delete", systemImage: "trash")
+                                BirthdayCell(name: birthday.name, date: birthday.date)
+                                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                                        Button(role: .destructive) {
+                                            modelContext.delete(birthday)
+                                            NotificationManager.shared
+                                                .removeNotificationWithBirthday(birthday: birthday)
+                                        } label: {
+                                            Label("Delete", systemImage: "trash")
+                                        }
                                     }
-                                }
+                                    .background {
+                                        NavigationLink("", destination: BirthdayDetailsViewEdit(birthday: birthday))
+                                            .opacity(0)
+                                    }
                             }
                         }
                     }
@@ -130,6 +138,32 @@ struct HomeView: View {
             }
             .scrollIndicators(ScrollIndicatorVisibility.hidden)
             .navigationBarTitle("Birthdays", displayMode: .large)
+            .onAppear() {
+                UNUserNotificationCenter.current().getNotificationSettings { settings in
+                    switch settings.authorizationStatus {
+                    case .authorized:
+                        notificationsAreActive = true
+                        UserDefaults.standard.set(true, forKey: "NotificationsPermissionGranted")
+                    default:
+                        notificationsAreActive = false
+                        UserDefaults.standard.set(false, forKey: "NotificationsPermissionGranted")
+                    }
+                }
+                NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)
+                    .sink(receiveValue: { _ in
+                        UNUserNotificationCenter.current().getNotificationSettings { settings in
+                            switch settings.authorizationStatus {
+                            case .authorized:
+                                notificationsAreActive = true
+                                UserDefaults.standard.set(true, forKey: "NotificationsPermissionGranted")
+                            default:
+                                notificationsAreActive = false
+                                UserDefaults.standard.set(false, forKey: "NotificationsPermissionGranted")
+                            }
+                        }
+                    })
+                    .store(in: &cancellables)
+            }
             .navigationBarItems(
                     leading:
                         HStack(){
@@ -153,90 +187,52 @@ struct HomeView: View {
                             }
                         },
                     trailing: Button(action: {
-                        // Handle right button action
+                        showingSettingsView = true
                     }) {
-                        Image(systemName: "gearshape")
-                            .foregroundColor(.orange)
+                        NavigationLink(destination: SettingsView(
+                                            notificationsEnabled: $notificationsEnabled,
+                                            isActive: $notificationsAreActive
+                                        )
+                                        .navigationBarTitle("Settings", displayMode: .inline)
+                        )
+                        {
+                            Image(systemName: "gearshape")
+                                .foregroundColor(.orange)
+                        }
                     }
                 )
-            }
-            .overlay(alignment: .bottomTrailing) {
-                Button(action: {
-                    showingPopover = true
-                }) {
-                    Image(systemName: "plus.circle.fill")
-                        .resizable()
-                        .frame(
-                            width: 45,
-                            height: 45
+                .overlay(alignment: .bottomTrailing) {
+                    Button(action: {
+                        showingNewDetailsView = true
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                            .resizable()
+                            .frame(
+                                width: 50,
+                                height: 50
+                            )
+                            .foregroundColor(.orange)
+                    }
+                    .background()
+                    .clipShape(Circle())
+                    .padding(
+                        EdgeInsets(
+                            top: 0,
+                            leading: 0,
+                            bottom: 0,
+                            trailing: 28
                         )
-                        .foregroundColor(.orange)
-                }
-                .background()
-                .clipShape(Circle())
-                .padding(
-                    EdgeInsets(
-                        top: 0,
-                        leading: 0,
-                        bottom: 0,
-                        trailing: 28
                     )
-                )
-                .shadow(radius: 2.5)
-                .popover(isPresented: $showingPopover) {
-                    BirthdayDetailsView()
+                    .popover(isPresented: $showingNewDetailsView) {
+                        BirthdayDetailsView()
+                    }
                 }
             }
+            .accentColor(.orange)
             .onAppear {
                 NotificationManager.shared.requestAuthorization()
                 UNUserNotificationCenter.current().delegate = NotificationManager.shared
             }
-    }
-    
-    
-    //MARK: - Helper Functions
-    
-    func daysLeft(date: BirthdayDate?) -> String {
-        let calendar = Calendar.current
-        guard let day = date?.day,
-              let month = date?.month,
-              let date = date
-        else { return "" }
-        
-        var nextYear = year
-        if date < currentDate {
-            nextYear += 1
-        }
-        
-        var components1 = DateComponents()
-        components1.year = year
-        components1.month = currentDate.month
-        components1.day = currentDate.day
-
-        var components2 = DateComponents()
-        components2.year = nextYear
-        components2.month = month
-        components2.day = day
-
-        guard let startDate = calendar.date(from: components1),
-              let endDate = calendar.date(from: components2) else {
-            return ""
-        }
-
-        let difference = calendar.dateComponents([.day], from: startDate, to: endDate)
-
-        guard let difference = difference.day else {
-            return ""
-        }
-        
-        switch difference {
-        case 0:
-            return "🥳Today"
-        case 1:
-            return "Tomorrow"
-        default:
-            return "In \(difference) Days"
-        }
     }
 }
 
@@ -270,12 +266,25 @@ extension HomeView {
             } else {
                 groupedBirthdays[month] = [birthday]
             }
+//            print(birthday.name)
         }
 
         return groupedBirthdays
     }
 }
 
-#Preview {
-    HomeView()
+extension UserDefaults {
+    @objc var notificationsEnabled: Bool {
+        get {
+            return bool(forKey: "NotificationsEnabledInAppSettings")
+        }
+        set {
+            set(newValue, forKey: "NotificationsEnabledInAppSettings")
+        }
+    }
 }
+
+//#Preview {
+//    @State var isActive: Bool = true
+//    HomeView(isActive: $isActive)
+//}

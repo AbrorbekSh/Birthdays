@@ -1,0 +1,24 @@
+{
+  "source": "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Animation.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Wednesday"
+      },
+      {
+        "comment": "",
+        "key": "18°"
+      },
+      {
+        "comment": "",
+        "key": "Partly Cloudy"
+      },
+      {
+        "comment": "",
+        "key": "H:21° L:12°"
+      }
+    ]
+  },
+  "version": 1
+}

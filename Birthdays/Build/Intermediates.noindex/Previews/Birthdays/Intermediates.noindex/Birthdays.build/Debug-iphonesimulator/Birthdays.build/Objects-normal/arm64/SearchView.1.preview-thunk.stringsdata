@@ -1,0 +1,20 @@
+{
+  "source": "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Search"
+      },
+      {
+        "comment": "",
+        "key": "Delete"
+      },
+      {
+        "comment": "",
+        "key": "Done"
+      }
+    ]
+  },
+  "version": 1
+}

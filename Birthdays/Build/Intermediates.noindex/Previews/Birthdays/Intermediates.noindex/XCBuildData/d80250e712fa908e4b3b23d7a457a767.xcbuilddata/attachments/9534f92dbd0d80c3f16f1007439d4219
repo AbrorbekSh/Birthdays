@@ -1,0 +1,228 @@
+{
+  "" : {
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthdays-master.dia",
+    "emit-module-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthdays-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthdays-master-emit-module.dia",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthdays-master.swiftdeps"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Application/BirthdaysApp.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysApp~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Components/CustomButtonStyle.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/DatePickerDateProvider.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/DismissingKeyboard.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Extensions/Color + Extension.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Color + Extension~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Extensions/Date + Extensions.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Date + Extensions~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Extensions/View + Extensions.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/View + Extensions~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Models/Birthday.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/Birthday~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Models/BirthdayDate.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDate~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Models/BirthdaysViewModel.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdaysViewModel~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/NotificationHandler.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/NotificationHandler~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/BirthdayCalendarListView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarListView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/BirthdayCalendarView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/BirthdayDetailsView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/BirthdayDetailsViewEdit.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsViewEdit~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/CalendarView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CalendarView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/Cells/BirthdayCalendarCell.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCalendarCell~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/Cells/BirthdayCell.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayCell~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/HomeView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/SearchView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SearchView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/SettingsView.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

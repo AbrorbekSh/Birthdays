@@ -1,0 +1,72 @@
+{
+  "source": "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Previews/Birthdays/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/BirthdayDetailsView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "Enter the name"
+      },
+      {
+        "comment": "",
+        "key": "Pick the date"
+      },
+      {
+        "comment": "",
+        "key": "Notes"
+      },
+      {
+        "comment": "",
+        "key": "Remind me"
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Month"
+      },
+      {
+        "comment": "",
+        "key": "Day"
+      },
+      {
+        "comment": "",
+        "key": "Select a Year"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "Any additional information"
+      },
+      {
+        "comment": "",
+        "key": "On birthday at 10:00 AM"
+      },
+      {
+        "comment": "",
+        "key": "1 day before"
+      },
+      {
+        "comment": "",
+        "key": "1 week before"
+      }
+    ]
+  },
+  "version": 1
+}

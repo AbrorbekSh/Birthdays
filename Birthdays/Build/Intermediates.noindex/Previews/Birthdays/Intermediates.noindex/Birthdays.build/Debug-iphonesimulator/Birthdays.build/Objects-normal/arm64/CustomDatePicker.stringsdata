@@ -1,0 +1,20 @@
+{
+  "source": "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/Views/CustomDatePicker.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "Selected Date: %@"
+      }
+    ]
+  },
+  "version": 1
+}
