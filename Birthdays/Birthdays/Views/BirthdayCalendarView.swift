@@ -2,7 +2,7 @@
 //  BirthdayCalendarView.swift
 //  Birthdays
 //
-//  Created by Alisher Zinullayev on 19.12.2023.
+//  Created by Abrorbek Shanazarov on 19.12.2023.
 //
 
 import SwiftUI
