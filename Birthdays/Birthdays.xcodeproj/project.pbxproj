@@ -26,7 +26,6 @@
 		43515E3E2B322EC200032E61 /* BirthdayCalendarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */; };
 		43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */; };
 		437D94E72B30ECA8003873CA /* BirthdayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */; };
-		6287B3952B4434FC00B6BF31 /* DatePickerDateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3942B4434FC00B6BF31 /* DatePickerDateProvider.swift */; };
 		6287B3972B446C9700B6BF31 /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */; };
 		6287B3992B45B16400B6BF31 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3982B45B16400B6BF31 /* SettingsView.swift */; };
 		62B36B5A2B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B36B592B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift */; };
@@ -55,7 +54,6 @@
 		43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarListView.swift; sourceTree = "<group>"; };
 		43515E3F2B32309200032E61 /* BirthdayCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarCell.swift; sourceTree = "<group>"; };
 		437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarView.swift; sourceTree = "<group>"; };
-		6287B3942B4434FC00B6BF31 /* DatePickerDateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDateProvider.swift; sourceTree = "<group>"; };
 		6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
 		6287B3982B45B16400B6BF31 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		62B36B592B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDetailsViewEdit.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 				2193A4822B0F10CC0095BAFB /* Application */,
 				2193A86A2B0DFCB9009E677D /* Preview Content */,
 				2187F3F02B1A7CD1001649BC /* NotificationHandler.swift */,
-				6287B3942B4434FC00B6BF31 /* DatePickerDateProvider.swift */,
 				6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */,
 			);
 			path = Birthdays;
@@ -271,7 +268,6 @@
 				43515E3E2B322EC200032E61 /* BirthdayCalendarListView.swift in Sources */,
 				2187F3ED2B1A0E61001649BC /* SearchView.swift in Sources */,
 				214855CB2B17337B00D9558E /* BirthdayDate.swift in Sources */,
-				6287B3952B4434FC00B6BF31 /* DatePickerDateProvider.swift in Sources */,
 				43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */,
 				2193A47D2B0E77960095BAFB /* BirthdayCell.swift in Sources */,
 				62B36B5A2B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift in Sources */,

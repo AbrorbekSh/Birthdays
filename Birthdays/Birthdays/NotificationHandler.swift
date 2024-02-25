@@ -2,7 +2,7 @@
 //  NotificationHandler.swift
 //  Birthdays
 //
-//  Created by Аброрбек on 02.12.2023.
+//  Created by Abrorbek Shanazarov on 02.12.2023.
 //
 
 import Foundation

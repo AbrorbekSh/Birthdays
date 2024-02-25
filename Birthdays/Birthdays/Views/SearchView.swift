@@ -2,7 +2,7 @@
 //  SearchView.swift
 //  Birthdays
 //
-//  Created by Аброрбек on 01.12.2023.
+//  Created by Abrorbek Shanazarov on 01.12.2023.
 //
 
 import SwiftUI

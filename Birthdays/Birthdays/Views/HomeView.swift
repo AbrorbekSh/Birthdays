@@ -2,7 +2,7 @@
 //  HomePageView.swift
 //  Birthdays
 //
-//  Created by Аброрбек on 22.11.2023.
+//  Created by Abrorbek Shanazarov on 22.11.2023.
 //
 
 import Combine
