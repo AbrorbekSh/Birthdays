@@ -19,7 +19,7 @@
     "activeRunDestination" : {
       "disableOnlyActiveArch" : false,
       "platform" : "iphonesimulator",
-      "sdk" : "iphonesimulator17.0",
+      "sdk" : "iphonesimulator17.2",
       "sdkVariant" : "iphonesimulator",
       "supportedArchitectures" : [
         "arm64",
@@ -41,14 +41,14 @@
       "synthesized" : {
         "table" : {
           "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
-          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.0",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.2",
           "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
           "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
           "ENABLE_PREVIEWS" : "NO",
           "ENABLE_XOJIT_PREVIEWS" : "NO",
-          "TARGET_DEVICE_IDENTIFIER" : "717B74E8-8277-4F0F-BF7F-3A1F09636968",
+          "TARGET_DEVICE_IDENTIFIER" : "6E62708E-E3D1-4B88-8931-1EF671D7346E",
           "TARGET_DEVICE_MODEL" : "iPhone16,1",
-          "TARGET_DEVICE_OS_VERSION" : "17.0",
+          "TARGET_DEVICE_OS_VERSION" : "17.2",
           "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
         }
       }

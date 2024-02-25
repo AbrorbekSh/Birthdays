@@ -19,7 +19,7 @@
     "activeRunDestination" : {
       "disableOnlyActiveArch" : false,
       "platform" : "iphoneos",
-      "sdk" : "iphoneos17.0",
+      "sdk" : "iphoneos17.2",
       "sdkVariant" : "iphoneos",
       "supportedArchitectures" : [
         "arm64e",
@@ -42,15 +42,15 @@
     "overrides" : {
       "synthesized" : {
         "table" : {
-          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,5",
-          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.2.1",
-          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone14,5",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone13,3",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.1.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone13,3",
           "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
           "ENABLE_PREVIEWS" : "NO",
           "ENABLE_XOJIT_PREVIEWS" : "NO",
-          "TARGET_DEVICE_IDENTIFIER" : "00008110-001C516801A0201E",
-          "TARGET_DEVICE_MODEL" : "iPhone14,5",
-          "TARGET_DEVICE_OS_VERSION" : "17.2.1",
+          "TARGET_DEVICE_IDENTIFIER" : "00008101-000529092EC1001E",
+          "TARGET_DEVICE_MODEL" : "iPhone13,3",
+          "TARGET_DEVICE_OS_VERSION" : "17.1.2",
           "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
         }
       }
