@@ -25,16 +25,6 @@
     "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle.swiftdeps",
     "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/CustomButtonStyle~partial.swiftmodule"
   },
-  "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/DatePickerDateProvider.swift" : {
-    "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.swiftconstvalues",
-    "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.d",
-    "diagnostics" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.dia",
-    "index-unit-output-path" : "/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.o",
-    "llvm-bc" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.bc",
-    "object" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.o",
-    "swift-dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider.swiftdeps",
-    "swiftmodule" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DatePickerDateProvider~partial.swiftmodule"
-  },
   "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Birthdays/DismissingKeyboard.swift" : {
     "const-values" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.swiftconstvalues",
     "dependencies" : "/Users/shanazarov/Desktop/iOS/Birthdays/Birthdays/Build/Intermediates.noindex/Birthdays.build/Debug-iphonesimulator/Birthdays.build/Objects-normal/arm64/DismissingKeyboard.d",
