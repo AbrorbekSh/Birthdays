@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210B96882BCEB9CE008A658F /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B96872BCEB9CE008A658F /* DateService.swift */; };
+		210B968B2BCEBA66008A658F /* BirthdayDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B968A2BCEBA66008A658F /* BirthdayDetailsViewModel.swift */; };
+		210B968D2BCED02F008A658F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B968C2BCED02F008A658F /* HomeViewModel.swift */; };
 		214855C52B15A67D00D9558E /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214855C42B15A67D00D9558E /* Color + Extension.swift */; };
 		214855C72B15A8BD00D9558E /* View + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214855C62B15A8BD00D9558E /* View + Extensions.swift */; };
 		214855CB2B17337B00D9558E /* BirthdayDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214855CA2B17337B00D9558E /* BirthdayDate.swift */; };
@@ -28,10 +31,12 @@
 		437D94E72B30ECA8003873CA /* BirthdayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */; };
 		6287B3972B446C9700B6BF31 /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */; };
 		6287B3992B45B16400B6BF31 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287B3982B45B16400B6BF31 /* SettingsView.swift */; };
-		62B36B5A2B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B36B592B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210B96872BCEB9CE008A658F /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		210B968A2BCEBA66008A658F /* BirthdayDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDetailsViewModel.swift; sourceTree = "<group>"; };
+		210B968C2BCED02F008A658F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		214855C42B15A67D00D9558E /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 		214855C62B15A8BD00D9558E /* View + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extensions.swift"; sourceTree = "<group>"; };
 		214855CA2B17337B00D9558E /* BirthdayDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDate.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCalendarView.swift; sourceTree = "<group>"; };
 		6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
 		6287B3982B45B16400B6BF31 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		62B36B592B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDetailsViewEdit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210B96862BCEB9B9008A658F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				210B96872BCEB9CE008A658F /* DateService.swift */,
+				2187F3F02B1A7CD1001649BC /* NotificationHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		210B96892BCEBA4C008A658F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				210B968A2BCEBA66008A658F /* BirthdayDetailsViewModel.swift */,
+				210B968C2BCED02F008A658F /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		2148D18F2B1232EE00EB2715 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +148,6 @@
 				437D94E62B30ECA8003873CA /* BirthdayCalendarView.swift */,
 				43515E3D2B322EC200032E61 /* BirthdayCalendarListView.swift */,
 				6287B3982B45B16400B6BF31 /* SettingsView.swift */,
-				62B36B592B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,16 +180,17 @@
 		2193A8612B0DFCB8009E677D /* Birthdays */ = {
 			isa = PBXGroup;
 			children = (
-				2193A86D2B0DFCB9009E677D /* Birthdays.entitlements */,
+				2193A4862B0F11590095BAFB /* Views */,
+				210B96892BCEBA4C008A658F /* ViewModels */,
 				2187F3EF2B1A6C1E001649BC /* Extensions */,
 				2148D18F2B1232EE00EB2715 /* Components */,
-				2193A4862B0F11590095BAFB /* Views */,
 				2193A4852B0F114C0095BAFB /* Models */,
 				2193A4832B0F10DA0095BAFB /* Resources */,
 				2193A4822B0F10CC0095BAFB /* Application */,
+				210B96862BCEB9B9008A658F /* Services */,
 				2193A86A2B0DFCB9009E677D /* Preview Content */,
-				2187F3F02B1A7CD1001649BC /* NotificationHandler.swift */,
 				6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */,
+				2193A86D2B0DFCB9009E677D /* Birthdays.entitlements */,
 			);
 			path = Birthdays;
 			sourceTree = "<group>";
@@ -252,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6287B3992B45B16400B6BF31 /* SettingsView.swift in Sources */,
+				210B968D2BCED02F008A658F /* HomeViewModel.swift in Sources */,
 				2193A8672B0DFCB8009E677D /* Birthday.swift in Sources */,
 				214855C52B15A67D00D9558E /* Color + Extension.swift in Sources */,
 				2193A47F2B0E7D560095BAFB /* CalendarView.swift in Sources */,
@@ -266,11 +289,12 @@
 				437D94E72B30ECA8003873CA /* BirthdayCalendarView.swift in Sources */,
 				21D48E3B2B236485002A9D95 /* Date + Extensions.swift in Sources */,
 				43515E3E2B322EC200032E61 /* BirthdayCalendarListView.swift in Sources */,
+				210B968B2BCEBA66008A658F /* BirthdayDetailsViewModel.swift in Sources */,
 				2187F3ED2B1A0E61001649BC /* SearchView.swift in Sources */,
 				214855CB2B17337B00D9558E /* BirthdayDate.swift in Sources */,
 				43515E402B32309200032E61 /* BirthdayCalendarCell.swift in Sources */,
 				2193A47D2B0E77960095BAFB /* BirthdayCell.swift in Sources */,
-				62B36B5A2B4BDB1900857C93 /* BirthdayDetailsViewEdit.swift in Sources */,
+				210B96882BCEB9CE008A658F /* DateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,10 +426,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Birthdays/Birthdays.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Birthdays/Preview Content\"";
-				DEVELOPMENT_TEAM = 5W372D4W5U;
+				DEVELOPMENT_TEAM = 7MJTTLBM2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Birthdays/Resources/Info.plist;
@@ -421,6 +446,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = abrorbek.Birthdays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -436,10 +462,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Birthdays/Birthdays.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Birthdays/Preview Content\"";
-				DEVELOPMENT_TEAM = 5W372D4W5U;
+				DEVELOPMENT_TEAM = 7MJTTLBM2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Birthdays/Resources/Info.plist;
@@ -455,6 +482,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = abrorbek.Birthdays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

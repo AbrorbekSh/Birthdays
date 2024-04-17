@@ -39,6 +39,11 @@ struct SettingsView: View {
                     .disabled(!isActive)
                 }
             }
+            Spacer()
+            Section {
+                Text("Made in Kazakhstan 🇰🇿")
+                    .foregroundColor(.gray)
+            }
     }
 
     private var notificationAdvice: String {

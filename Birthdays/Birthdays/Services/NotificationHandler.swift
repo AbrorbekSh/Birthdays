@@ -59,8 +59,8 @@ final class NotificationManager: NSObject, ObservableObject, UNUserNotificationC
 
             dateComponents.month = month
             dateComponents.day = day
-            dateComponents.hour = 19
-            dateComponents.minute = 40
+            dateComponents.hour = 10
+            dateComponents.minute = 0
 
             scheduleNotification(
                 name: name,
