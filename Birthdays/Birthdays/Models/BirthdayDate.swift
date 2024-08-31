@@ -5,7 +5,6 @@
 //  Created by Аброрбек on 29.11.2023.
 //
 
-import Foundation
 import SwiftData
 import SwiftUI
 
@@ -23,8 +22,8 @@ final class BirthdayDate: Comparable {
         }
     }
     
-    let day: Int
-    let month: Int
+    var day: Int
+    var month: Int
     
     init(day: Int, month: Int) {
         self.day = day

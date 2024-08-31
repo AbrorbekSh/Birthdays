@@ -7,17 +7,13 @@
 
 import Foundation
 
-class DateService {
-    let calendar: Calendar
-
-    init(calendar: Calendar = .current) {
-        self.calendar = calendar
-    }
-
-    func daysInMonth(month: Int, year: Int) -> [Int] {
+final class DateService {
+    static func daysInMonth(month: Int, year: Int) -> [Int] {
         var dateComponents = DateComponents()
         dateComponents.year = year
         dateComponents.month = month
+        
+        let calendar: Calendar = .current
 
         guard let date = calendar.date(from: dateComponents),
               let range = calendar.range(of: .day, in: .month, for: date) else {
@@ -27,8 +23,10 @@ class DateService {
         return Array(range.lowerBound..<range.upperBound)
     }
 
-    func isLeapYear(year: Int) -> Bool {
+    static func isLeapYear(year: Int) -> Bool {
         let dateComponents = DateComponents(year: year)
+        let calendar: Calendar = .current
+        
         guard let date = calendar.date(from: dateComponents) else {
             return false
         }

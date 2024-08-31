@@ -19,6 +19,8 @@ class HomeViewModel: ObservableObject {
     @Published var showingCalendarView = false
     @Published var showingSettingsView = false
     
+    private var notificationTimer: Timer?
+    
     let months = ["January", "February", "March", "April", "May", "June",
                   "July", "August", "September", "October", "November", "December"]
     
@@ -56,7 +58,6 @@ class HomeViewModel: ObservableObject {
     }
     
     func birthdaysForMonth(_ month: String) -> [Birthday] {
-        let calendar = Calendar.current
         return birthdays.filter { birthday in
             guard let date = birthday.date else { return false }
             return monthDictionary[month] == date.month
@@ -67,7 +68,22 @@ class HomeViewModel: ObservableObject {
 
     func deleteBirthday(_ birthday: Birthday) {
         modelContext.delete(birthday)
-        NotificationManager.shared.removeNotificationWithBirthday(birthday: birthday)
+        NotificationManager.shared.removeNotification(birthday: birthday)
+    }
+
+    @objc func sendNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "Reminder"
+        content.body = "This is a local notification sent every 5 seconds."
+        content.sound = .default
+
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Failed to add notification request: \(error)")
+            }
+        }
     }
 
     func setupNotifications() {

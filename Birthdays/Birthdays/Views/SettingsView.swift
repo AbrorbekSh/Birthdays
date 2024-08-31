@@ -29,7 +29,7 @@ struct SettingsView: View {
                     .onChange(of: notificationsEnabled) {
                         switch notificationsEnabled {
                         case true:
-                            NotificationManager.shared.scheduleNotificationsWithBirthdays(birthdays: birthdays)
+                            NotificationManager.shared.scheduleNotifications(birthdays: birthdays)
                             UserDefaults.standard.set(true, forKey: "NotificationsEnabledInAppSettings")
                         case false:
                             NotificationManager.shared.removeAllNotifications()

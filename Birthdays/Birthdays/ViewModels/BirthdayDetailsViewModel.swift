@@ -17,7 +17,6 @@ class BirthdayDetailsViewModel: ObservableObject {
                   "July", "August", "September", "October", "November", "December"]
     let years: [String] = (1940...2024).map { String($0) } + ["----"]
     
-    private let dateService = DateService()
     private let context: ModelContext
     private let notificationManager = NotificationManager.shared
     private let birthday: Birthday?
@@ -40,7 +39,7 @@ class BirthdayDetailsViewModel: ObservableObject {
     let title: String
 
     var daysInSelectedMonth: [Int] {
-        dateService.daysInMonth(month: selectedMonth, year: Int(selectedYear) ?? Calendar.current.component(.year, from: Date()))
+        DateService.daysInMonth(month: selectedMonth, year: Int(selectedYear) ?? Calendar.current.component(.year, from: Date()))
     }
 
     func saveBirthday(completion: () -> Void) {
@@ -64,7 +63,7 @@ class BirthdayDetailsViewModel: ObservableObject {
         }
 
         if UserDefaults.standard.value(forKey: "NotificationsEnabledInAppSettings") as! Bool {
-            notificationManager.scheduleNotificationWithBirthday(newBirthday: newBirthday, oldBirthday: birthday)
+            notificationManager.scheduleNotification(newBirthday: newBirthday, oldBirthday: birthday)
         }
         completion()
     }

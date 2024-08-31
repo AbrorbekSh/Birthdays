@@ -8,7 +8,7 @@
 import Foundation
 import UserNotifications
 
-final class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterDelegate {
+final class NotificationManager: NSObject, ObservableObject {
     static let shared = NotificationManager()
 
     override private init() {}
@@ -16,6 +16,7 @@ final class NotificationManager: NSObject, ObservableObject, UNUserNotificationC
     func requestAuthorization() {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            //Todo: Add constants
             if let error = error {
                 print("Error: \(error.localizedDescription)")
                 UserDefaults.standard.set(false, forKey: "NotificationsEnabledInAppSettings")
@@ -29,20 +30,19 @@ final class NotificationManager: NSObject, ObservableObject, UNUserNotificationC
         }
     }
 
-    func scheduleNotificationsWithBirthdays(birthdays: [Birthday]) {
+    func scheduleNotifications(birthdays: [Birthday]) {
         removeAllNotifications()
+        
         for birthday in birthdays {
-            scheduleNotificationWithBirthday(
+            scheduleNotification(
                 newBirthday: birthday,
                 oldBirthday: nil
             )
         }
     }
 
-    func scheduleNotificationWithBirthday(
-        newBirthday: Birthday,
-        oldBirthday: Birthday?
-    ) {
+    //Todo refactore the method
+    func scheduleNotification(newBirthday: Birthday, oldBirthday: Birthday?) {
         guard let id = newBirthday.id,
               let name = newBirthday.name,
               let day = newBirthday.date?.day,
@@ -113,18 +113,11 @@ final class NotificationManager: NSObject, ObservableObject, UNUserNotificationC
             )
         }
 
-        removeNotificationWithBirthday(birthday: oldBirthday)
+        removeNotification(birthday: oldBirthday)
     }
 
-    func userNotificationCenter(
-        _ center: UNUserNotificationCenter,
-        willPresent notification: UNNotification,
-        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
-    ) {
-        completionHandler([.banner, .sound, .badge])
-    }
-
-    func removeNotificationWithBirthday(birthday: Birthday?) {
+    //Todo: refactore
+    func removeNotification(birthday: Birthday?) {
         guard let birthday = birthday else { return }
 
         guard let id = birthday.id,

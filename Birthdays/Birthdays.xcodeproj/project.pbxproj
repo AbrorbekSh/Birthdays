@@ -180,14 +180,14 @@
 		2193A8612B0DFCB8009E677D /* Birthdays */ = {
 			isa = PBXGroup;
 			children = (
+				2193A4822B0F10CC0095BAFB /* Application */,
+				2193A4852B0F114C0095BAFB /* Models */,
+				210B96862BCEB9B9008A658F /* Services */,
 				2193A4862B0F11590095BAFB /* Views */,
 				210B96892BCEBA4C008A658F /* ViewModels */,
 				2187F3EF2B1A6C1E001649BC /* Extensions */,
 				2148D18F2B1232EE00EB2715 /* Components */,
-				2193A4852B0F114C0095BAFB /* Models */,
 				2193A4832B0F10DA0095BAFB /* Resources */,
-				2193A4822B0F10CC0095BAFB /* Application */,
-				210B96862BCEB9B9008A658F /* Services */,
 				2193A86A2B0DFCB9009E677D /* Preview Content */,
 				6287B3962B446C9700B6BF31 /* DismissingKeyboard.swift */,
 				2193A86D2B0DFCB9009E677D /* Birthdays.entitlements */,
@@ -444,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = abrorbek.Birthdays;
+				PRODUCT_BUNDLE_IDENTIFIER = abrorbek.Birthdays.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -480,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = abrorbek.Birthdays;
+				PRODUCT_BUNDLE_IDENTIFIER = abrorbek.Birthdays.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

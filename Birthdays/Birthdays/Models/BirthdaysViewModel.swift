@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BirthdaysViewModel: ObservableObject {
+final class BirthdaysViewModel: ObservableObject {
     @Published var birthdays: [Birthday]
 
     init(birthdays: [Birthday] = []) {
